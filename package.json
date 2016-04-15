@@ -1,0 +1,29 @@
+{
+  "name": "react_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "eventemitter3": "^1.2.0",
+    "fbemitter": "^2.0.2",
+    "jsx-loader": "^0.13.2",
+    "lite-server": "^2.2.0",
+    "object-assign": "^4.0.1",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "webpack": "^1.12.14"
+  }
+}
