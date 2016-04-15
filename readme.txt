@@ -1,3 +1,5 @@
+Install nodejs
+
 npm install -g typescript
 
 npm link typescript
