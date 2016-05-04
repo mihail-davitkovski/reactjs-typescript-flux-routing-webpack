@@ -5,8 +5,9 @@
   "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server --port 10001",
-    "start": "npm run lite"
+    "build": "webpack",
+    "lite": "lite-server --port 10002",
+    "start":"npm run lite"
   },
   "author": "",
   "license": "ISC",
