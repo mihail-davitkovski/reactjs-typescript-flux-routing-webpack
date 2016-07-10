@@ -2,16 +2,16 @@
 
 import * as ReactDom from "react-dom";
 
-import { Router, Route, Link, browserHistory  } from "react-router";
+import  * as ReactRouter  from "react-router";
 
 import {CommentBox} from "./src/Components/CommentComponents/CommentBox";
  
 import {FilterableProductTable} from "./src/Components/SearchComponents/FilterableProductTable";
 
 ReactDom.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={FilterableProductTable}/>
-    <Route path="search" component={FilterableProductTable}/>
-    <Route path="comments" component={CommentBox}/>
-  </Router>
+  <ReactRouter.Router history={ReactRouter.browserHistory}>
+    <ReactRouter.Route path="/" component={FilterableProductTable}/>
+    <ReactRouter.Route path="search" component={FilterableProductTable}/>
+    <ReactRouter.Route path="comments" component={CommentBox}/>
+  </ReactRouter.Router>
 ), document.getElementById('content'))

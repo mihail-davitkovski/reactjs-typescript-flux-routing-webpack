@@ -16,7 +16,7 @@ var config = {
     entry: 
     {
         app: ['./index.tsx'],
-        vendors: ['react', 'react-dom','react-router', 'dispatcher', 'eventemitter']
+        vendors: ['dispatcher', 'eventemitter']
     },
     // We add a plugin called CommonsChunkPlugin that will take the vendors chunk
     // and create a vendors.js file. As you can see the first argument matches the key
@@ -47,11 +47,17 @@ var config = {
         // you can now require('file') instead of require('file.tsx')
         extensions: ['', '.js', '.ts', '.tsx']
     },
+
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM",
+        "react-router": "ReactRouter"
+    }
 };
 
-config.addVendor('react', node_dir + '/react/dist/react.min.js');
-config.addVendor('react-dom', node_dir + '/react-dom/dist/react-dom.min.js');
-config.addVendor('react-router', node_dir + '/react-router/umd/ReactRouter.min.js');
+//config.addVendor('react', node_dir + '/react/dist/react.min.js');
+//config.addVendor('react-dom', node_dir + '/react-dom/dist/react-dom.min.js');
+//config.addVendor('react-router', node_dir + '/react-router/umd/ReactRouter.min.js');
 config.addVendor('dispatcher', node_dir + '/flux');
 config.addVendor('eventemitter', node_dir + '/eventemitter3');
 

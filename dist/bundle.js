@@ -12,16 +12,31 @@ webpackJsonp([0],[
 	"use strict";
 	var React = __webpack_require__(2);
 	var ReactDom = __webpack_require__(3);
-	var react_router_1 = __webpack_require__(4);
+	var ReactRouter = __webpack_require__(4);
 	var CommentBox_1 = __webpack_require__(5);
 	var FilterableProductTable_1 = __webpack_require__(19);
-	ReactDom.render((React.createElement(react_router_1.Router, {history: react_router_1.browserHistory}, React.createElement(react_router_1.Route, {path: "/", component: FilterableProductTable_1.FilterableProductTable}), React.createElement(react_router_1.Route, {path: "search", component: FilterableProductTable_1.FilterableProductTable}), React.createElement(react_router_1.Route, {path: "comments", component: CommentBox_1.CommentBox}))), document.getElementById('content'));
+	ReactDom.render((React.createElement(ReactRouter.Router, {history: ReactRouter.browserHistory}, React.createElement(ReactRouter.Route, {path: "/", component: FilterableProductTable_1.FilterableProductTable}), React.createElement(ReactRouter.Route, {path: "search", component: FilterableProductTable_1.FilterableProductTable}), React.createElement(ReactRouter.Route, {path: "comments", component: CommentBox_1.CommentBox}))), document.getElementById('content'));
 
 
 /***/ },
-/* 2 */,
-/* 3 */,
-/* 4 */,
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = React;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = ReactDOM;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	module.exports = ReactRouter;
+
+/***/ },
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
